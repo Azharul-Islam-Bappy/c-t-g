@@ -9,14 +9,25 @@ body{
   color: white;
 }
 
-.top-sec{
-  margin-block: 2rem;
-  padding: 0.25rem;
+.upper-layer{
   background-image: url('/assets/images/pattern-squiggly-line-top.svg');
   background-position-x: right;
   background-position-y: top;
   background-size: 50%;
   background-repeat: no-repeat;
+}
+
+.bottom-layer{
+  background-image: url('/assets/images/pattern-squiggly-line-bottom-desktop.svg');
+  background-position-x: left;
+  background-position-y: bottom;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.top-sec{
+  margin-block: 2rem;
+  padding: 0.25rem;
   
   .logo-container{
     width: 40%;
@@ -56,11 +67,6 @@ form{
 .bottom-sec{
   margin-block: 1rem 2rem;
   padding-inline: 0.5rem;
-  background-image: url('/assets/images/pattern-squiggly-line-bottom-desktop.svg');
-  background-position-x: left;
-  background-position-y: bottom;
-  background-size: 50%;
-  background-repeat: no-repeat;
   
   .lvl{
     font-size: 20px;
@@ -129,5 +135,26 @@ form{
     font-weight: 700;
     font-size: 20px;
     font-family: 'MyFont';
+  }
+}
+
+/* media queries */ 
+
+@media only screen and (min-width: 1080px) {
+  body{
+    background-image: url('/assets/images/background-desktop.png');
+    
+  }
+  
+  .upper-layer, .bottom-layer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top-sec, .bottom-sec{
+    width: 500px; 
+    height: auto;
   }
 }
