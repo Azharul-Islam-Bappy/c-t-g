@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/form.css" type="text/css" media="all" />
+  <title>Frontend Mentor | Conference ticket generator</title>
+</head>
+<body>
+  
+  <section class="top-sec">
+    <span class="logo-container">
+      <img class="logo" src="assets/images/logo-mark.svg" alt="logo icon" />
+      <h6>Coding Conf</h6>
+    </span>
+    <h3 class="heading-title">Your Journey to Coding Conf 2025 Starts Here!</h3>
+    <p>Secure your spot at next year's biggest coding conference.</p>
+  </section>
+  <section class="bottom-sec">
+    <form class="form"  accept-charset="utf-8">
+      <section class="avatar-section">
+        <span class="lvl">Upload Avatar</span>
+        <div class="avatar-input">
+          <input type="file" name="avatar" id="avatar" value="" hidden="true" />
+          <label for="avatar">
+            <img class="upload-icon" src="assets/images/icon-upload.svg" alt="icon of upload file" />
+            <span>Drag and Drop or Click to Upload</span>
+          </label>
+        </div>
+        <p>
+          <img class="info-icon" src="assets/images/icon-info.svg" alt="info icon" />
+          <span>Upload your photo (JPG or PNG, max size: 500KB).</span>
+        </p>
+      </section>
+      
+      <section class="name-section">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="full-name" id="full-name" placeholder="Enter full name" />
+      </section>
+      
+      <section class="email-section">
+        <label for="email-address">Email Address</label>
+        <input type="email" name="email-address" id="email-address" placeholder="example@email.com" />
+      </section>
+      
+      <section class="github-section">
+        <label for="github-username">GitHub Username</label>
+        <input type="text" name="github-username" id="github-username" placeholder="@yourusername" />
+      </section>
+      
+      <button id="generate-ticket" >Generate My Ticket</button>
+    </form>
+  </section>
+  
+
+  <!-- 
+
+  Congrats, (Full Name)  Your ticket is ready.
+
+  We've emailed your ticket to Email Address  and will send updates in the run up to the event.
+
+  Coding Conf
+  Jan 31, 2025 / Austin, TX
+
+   -->
+  
+  
+</body>
+</html>

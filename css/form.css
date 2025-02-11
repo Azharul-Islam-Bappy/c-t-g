@@ -1,0 +1,133 @@
+
+body{
+  width: 100vw; 
+  height: auto;
+  font-family: 'MyFont';
+  background-image: url('/assets/images/background-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.top-sec{
+  margin-block: 2rem;
+  padding: 0.25rem;
+  background-image: url('/assets/images/pattern-squiggly-line-top.svg');
+  background-position-x: right;
+  background-position-y: top;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  
+  .logo-container{
+    width: 40%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 1rem;
+    
+    h6{
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+  
+  h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'MyFont';
+    text-align: center;
+    margin-block: 2rem;
+  }
+  
+  p{
+    text-align: center;
+    color: hsla(252,6%,83%,1);
+    font-family: 'MyFont';
+  }
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-sec{
+  margin-block: 1rem 2rem;
+  padding-inline: 0.5rem;
+  background-image: url('/assets/images/pattern-squiggly-line-bottom-desktop.svg');
+  background-position-x: left;
+  background-position-y: bottom;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  
+  .lvl{
+    font-size: 20px;
+  }
+  
+  .avatar-section, .name-section, .email-section, .github-section{
+    width: 95%;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+  }
+  .name-section, .email-section, .github-section{
+    display: flex;
+    flex-direction: column;
+    
+    label{
+      font-size: 20px;
+    }
+    
+    input{
+      padding: 1rem;
+      border-radius: 0.8rem;
+      margin-block: 0.8rem;
+      font-family: 'MyFont';
+      color: hsl(252,6%,100%);
+      border: solid 1.4px hsl(252,6%,83%);
+      background: transparent;
+      backdrop-filter: blur(15px) brightness(0.975);
+      box-shadow: 0 4px 6px rgba(0,0,0, 0.2);
+      drop-shadow: 0 4px 10px rgba(0,0,0, 0.2);
+    }
+  }
+  .avatar-section{  
+    
+    .avatar-input{
+      width: 100%;
+      padding: 1rem;
+      margin-inline: auto;
+      margin-block: 0.35rem;
+      border: dashed 1.4px hsl(252,6%,83%);
+      border-radius: 1rem;
+    }
+    label{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      
+      img{
+        width: 30px; 
+        height: auto;
+      }
+      span{
+        text-align: center;
+      }
+    }
+  }
+  
+  #generate-ticket{
+    /* height: 80px; */
+    width: 60%;
+    margin-inline: auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: hsla(7,71%,60%,1);
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'MyFont';
+  }
+}
