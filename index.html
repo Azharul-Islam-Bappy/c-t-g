@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/form.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/ticket.css" type="text/css" media="all" />
   <title>Frontend Mentor | Conference ticket generator</title>
 </head>
-<body>
+<body id="body">
   <section class="upper-layer">
     
     <section class="top-sec">
@@ -22,7 +23,7 @@
   <section class="bottom-layer">
     
     <section class="bottom-sec">
-      <form class="form"  accept-charset="utf-8">
+      <form>
         <section class="avatar-section">
           <span class="lvl">Upload Avatar</span>
           <div class="avatar-input">
@@ -53,13 +54,12 @@
           <input type="text" name="github-username" id="github-username" placeholder="@yourusername" />
         </section>
         
-        <button id="generate-ticket" >Generate My Ticket</button>
+        <button type="button" id="generate-ticket" >Generate My Ticket</button>
       </form>
     </section>
   </section>
   
-  <script src="js/dom.js" type="module" charset="utf-8"></script>
-  <script src="js/client-side-validation.js" type="module" charset="utf-8"></script>
+  <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
   </script>
 </body>
 </html>
