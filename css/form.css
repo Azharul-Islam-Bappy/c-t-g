@@ -4,7 +4,7 @@ body{
   height: auto;
   font-family: 'MyFont';
   background-image: url('/assets/images/background-mobile.png');
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   color: white;
 }
@@ -18,10 +18,23 @@ body{
 }
 
 .bottom-layer{
-  background-image: url('/assets/images/pattern-squiggly-line-bottom-desktop.svg');
   background-position-x: left;
   background-position-y: bottom;
   background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.bottom-background{
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  bottom: -2px;
+  left: 0;
+  z-index: -1;
+  background-image: url('../assets/images/pattern-squiggly-line-bottom-desktop.svg');
+  background-size: contain;
+  background-position-x: -110%;
+  background-position-y: 0%;
   background-repeat: no-repeat;
 }
 
